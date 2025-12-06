@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(120deg, #c9d6ff, #e2e2e2);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #610968;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+nav a.active,
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 20px;
+  padding: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+h3 {
+  text-align: center;
+  color: rgb(98, 0, 128);
+  margin-bottom: 1rem;
+}
+
+form label {
+  display: block;
+  margin-top: 0.8rem;
+  font-weight: 500;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.4rem;
+  background: rgb(98, 0, 128);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: rgb(98, 0, 128);
+}
+
+/* To-Do Section */
+.todo-input {
+  display: flex;
+  gap: 10px;
+}
+
+ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+ul li {
+  background: #f5f7fb;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li button {
+  background: crimson;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+ul li button:hover {
+  background: darkred;
+}
+
+#error {
+  margin-top: 0.5rem;
+  color: red;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgb(98, 0, 128);
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
